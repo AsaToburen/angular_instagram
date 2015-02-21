@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  width: 90%;
+  height: 50em;
+  margin: 6em auto 0 auto;
+  border: 1px solid black;
+}
+body ul {
+  list-style-type: none;
+  margin-left: -2.5%;
+}
+body ul li {
+  width: 30%;
+  display: inline-block;
+  padding: .5em;
+  background: #fff;
+  border: 1px solid #ddd;
+  vertical-align: top;
+  box-shadow: 0 0 5px #ddd;
+  border: 1px solid black;
+}
+body ul img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 .5em;
+}
+body input {
+  margin-top: 2em;
+}
+
+/*# sourceMappingURL=style.css.map */
