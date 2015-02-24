@@ -25,6 +25,12 @@ body {
   height: auto;
   margin: 6em auto 0 auto;
 
+  .fa.fa-spin {
+    position: absolute;
+    right: 9.75em;
+    top: 3.5em;
+  }
+
   form {
     input {
     margin: 1.5em auto 1em 2em;
@@ -38,17 +44,15 @@ body {
     cursor: pointer;
     width: 9em;
     height: 4.5em;
-    display: inline-block;
     text-transform: uppercase;
-    margin-left: .5%;
     position: relative;
-    bottom: -3px;
+    left: 0.7em;
+    bottom: .65em;
       span {
         padding: 0;
         border:0;
         margin: 0;
       }
-
     }
 
     svg {
@@ -89,15 +93,12 @@ body {
         border: 1px solid #ddd;
         vertical-align: top;
         box-shadow: 0 0 5px #ddd;
-        -webkit-transition: all linear 2.5s;
-        -moz-transition: all linear 2.5s;
-        -o-transition: all linear 2.5s;
-        transition: all linear 2.5s;
+        -webkit-transition: all ease .7s;
+        -moz-transition: all ease .7s;
+        -o-transition: all ease .7s;
+        transition: all ease .7s;
         &:hover {
-          border: 1px solid rgba(126, 239, 104, 0.8);
-          box-shadow: 0 1px 1px #9ecaed inset, 0 0 8px #9ecaed;
-          background: radial-gradient(ellipse at center,  rgba(167,207,223,1) 65%,rgba(35,83,138,1) 100%); /* W3C */
-
+          background: #999999;
         }
       }
       li.ng-enter {
