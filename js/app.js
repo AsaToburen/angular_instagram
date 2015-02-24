@@ -29,10 +29,10 @@ angular.module('InstaMod', ['ngAnimate'])
           $scope.imageData.instagramUrl.push(result.data[i].link);
       }
       console.log($scope.imageData);
+      $scope.loadMsg = false;
       $scope.successMsg = true;
       $scope.submitText = true;
     });
-
   }
 
     $scope.searchInstagram = function(userInput) {
@@ -52,11 +52,11 @@ angular.module('InstaMod', ['ngAnimate'])
       params: request
     })
     .success(function( result ) {
-      $scope.loadMsg = false;
       parseCallback(result);
     })
       .error(function(){
        $scope.loadMsg = false;
+       $scope.successMsg = false;
        $scope.errorMsg = true;
     });
   };
